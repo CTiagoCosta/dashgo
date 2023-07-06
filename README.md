@@ -1,7 +1,8 @@
 Ignite
+![Alt text](image-1.png)
 Ignite - Trilha ReactJS
 dashgo
-
+![Alt text](image.png)
 
 Sobre o projeto
 O projeto foi baseado no 4º módulo da trilha ReactJS do Ignite. Além do que foi construído na aula, foi criado um banco de dados com o Prisma, um CRUD de usuários e um sistema de autenticação baseado na aula de autenticação e autorização.
