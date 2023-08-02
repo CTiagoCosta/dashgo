@@ -6,6 +6,8 @@ import { Header } from "../../components/Header";
 import { Sidebar } from "../../components/SideBar";
 import { Input } from "../../components/Form/Input";
 import Link from "next/link";
+import { useMutation } from "react-query";
+import { api } from "../../services/api";
 
 
 type CreateUserFormData = {
@@ -25,6 +27,16 @@ type CreateUserFormData = {
   })
 
 export default function CreateUser() {
+    const createUser = useMutation(async (user: CreateUserFormData) => {
+        const response = await api.post('users', {
+            user: {
+                ...user,
+                created_at: 
+
+            }
+        })
+    });
+
     const { register, handleSubmit, formState, formState:{ errors }} = useForm({
         resolver: yupResolver(createUserFormSchema)
       });
